@@ -3,7 +3,7 @@ pipeline {
   environment {
     CLOUDSDK_CORE_PROJECT='calm-seeker-375715'
     CLIENT_EMAIL='cloud-run@calm-seeker-375715.iam.gserviceaccount.com'
-    GCLOUD_CREDS=credentials('My First Project')
+    GCLOUD_CREDS=credentials('cloud-run')
   }
   stages {
     stage('Verify version') {
