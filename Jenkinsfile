@@ -13,7 +13,7 @@ pipeline {
         '''
       }
     }
-    stage('Authenticate') {
+   /* stage('Authenticate') {
       steps {
         sh '''
           gcloud auth activate-service-account --key-file="$GCLOUD_CREDS"
@@ -33,6 +33,6 @@ pipeline {
           gcloud run services add-iam-policy-binding hello --region='us-central1' --member='allUsers' --role='roles/run.invoker'
         '''
       }
-    }
+    }*/
   }
 }
